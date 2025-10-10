@@ -1,112 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anandkumar | Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anandkumar — Professional Portfolio</title>
+  <meta name="description" content="Personal professional portfolio — about, work, skills, contact.">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="theme-color" content="#0a192f">
 </head>
 <body>
-
+  <div class="wrap">
     <header>
-        <nav>
-            <div class="logo">
-                <a href="#home">Anandkumar</a>
-            </div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="brand">
+        <div class="logo">AK</div>
+        <div>
+          <div style="font-weight:800">Anandkumar</div>
+          <div class="muted" style="font-size:12px">Frontend developer • Chemistry Student • Problem Solver</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        
+      </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Hi, I'm Anandkumar</h1>
-                <p>A passionate developer creating modern and responsive web applications.</p>
-                <a href="#projects" class="cta-button">View My Work</a>
+      <section class="hero">
+        <div class="card">
+          <h1 class="headline">Hi — I'm <span style="color:var(--accent)">Anandkumar</span></h1>
+          <p class="sub">I build clean, maintainable web apps, and I love turning ideas into reliable, beautiful experiences. Currently studying B.Sc. Chemistry while learning software engineering.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#portfolio">See my work</a>
+        
+          </div>
+
+          <div style="margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+            <div class="card" style="padding:12px;background:transparent;border:1px solid rgba(255,255,255,0.03);">📁 <div style="font-size:13px;font-weight:700">3 Projects</div></div>
+
+          </div>
+        </div>
+
+        <aside class="card avatar">
+          <!-- Replace the src with your photo -->
+          <img src="C:\Users\venkatesh kumar k\Downloads\WhatsApp Image 2025-10-10 at 9.33.52 AM.jpeg" alt="your photo">
+          <div style="text-align:center">
+            <div style="font-weight:800">Anandkumar</div>
+            <div class="role muted">Front-end Developer • Student</div>
+          </div>
+          <div style="width:100%;display:flex;gap:8px;justify-content:center;margin-top:8px">
+            <a class="btn" href="#contact">Message</a>
+            <a class="btn" href="#portfolio">Portfolio</a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="card about">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <h3 style="margin:0">About me</h3>
+        </div>
+        <p>I’m a first-year B.Sc. Chemistry student learning software engineering. I enjoy building practical web projects and automations that save time. I focus on clean code, responsive design, and accessible interfaces.</p>
+
+        <div style="display:flex;gap:18px;margin-top:16px;flex-wrap:wrap">
+          <div style="min-width:220px">
+            <h4 style="margin:0 0 10px">Skills</h4>
+            <div class="skills">
+              <div class="skill"><strong>HTML</strong><div class="muted">70%</div></div>
+              <div class="bar"><span style="width:90%"></span></div>
+
+              <div class="skill"><strong>Css</strong><div class="muted">50%</div></div>
+              <div class="bar"><span style="width:70%"></span></div>
+
+              <div class="skill"><strong>JavaScript</strong><div class="muted">40%</div></div>
+              <div class="bar"><span style="width:60%"></span></div>
             </div>
-        </section>
+          </div>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p class="about-text">
-                    Hello! I am a passionate front-end developer with a strong foundation in web technologies. 
-                    I specialize in creating responsive and user-friendly websites using HTML, CSS, and JavaScript.
-                    My goal is to build beautiful and functional web experiences that make a difference.
-                </p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/anandkumar-m-k-947230371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
-                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WkYX7T9AYYTVCkWeWxRjUIecnar6-ANe2g&s" alt="Chemistry Quiz Project">
-                    <h3>Chemistry Quiz</h3>
-                    <p>An interactive chemistry quiz application built with HTML, CSS, and JavaScript. Test your chemistry knowledge with various questions and get instant feedback.</p>
-                    <div class="project-links">
-                        <a href="https://ucy009-1.netlify.app/" class="demo-btn" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        <a href="https://github.com/kumaranand3352-lang/Chem-quiz.git" class="github-btn" target="_blank">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
+          <div style="flex:1;min-width:240px">
+            <h4 style="margin:0 0 10px">What I bring</h4>
+            <ul class="muted" style="margin:0;padding-left:18px">
+              <li>Clean, responsive UI with accessibility in mind</li>
+              <li>Readable code and helpful comments</li>
+              <li>Quick prototyping and iterative delivery</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPQcPbOdbs6JSl5mKdQ3gXM5V0Ylc-jTHiDA&s" alt="Portfolio Website">
-                    <h3>Portfolio Website</h3>
-                    <p>A responsive portfolio website showcasing my work and skills. Built with modern HTML, CSS.</p>
-                    <div class="project-links">
-                        
-                    
-                        <a href="https://github.com/kumaranand3352-lang/personal-web-page.git" class="github-btn" target="_blank">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
+      <section id="portfolio">
+  <h3 style="margin:0 0 12px">Featured Projects</h3>
+  <div class="portfolio-grid">
+    
+    <!-- Project 1 -->
+    <article class="proj card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4vwIAkxrR3P_ZPkZ4qsH7SXqbBYHHOtRxbw&s" alt="Chemistry Quiz App" style="width:100%;border-radius:8px;margin-bottom:8px;">
+      <h4>Chemistry Quiz App</h4>
+      <p class="muted">An interactive chemistry quiz application built with HTML, CSS, and JavaScript. Test your chemistry knowledge with various questions and get instant feedback.</p>
+      <div style="display:flex;gap:8px;margin-top:10px;">
+        <a class="btn btn-primary" href="https://ucy009-1.netlify.app/" target="_blank">Live Demo</a>
+        <a class="btn" href="https://github.com/kumaranand3352-lang/Chem-quiz" target="_blank">GitHub</a>
+      </div>
+    </article>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <img src="data:image/jpeg;base64,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" alt="E-Learning Platform">
-                    <h3>E-Learning Platform</h3>
-                    <p>An interactive e-learning platform offering a wide range of courses for skill development and personal growth. Learn anytime, anywhere with expert-led video lessons and assessments.
-</p>
-                    <div class="project-links">
-                        <a href="https://e-learn-009.netlify.app/" class="demo-btn" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
-                        </a>
-                        
-                    
-                        <a href="https://github.com/kumaranand3352-lang/E-learn.git" class="github-btn" target="_blank">
-                            <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
+    <!-- Project 2 -->
+    <article class="proj card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1XG9WyjhPcBcrFHNl4YO10BzNlc9lt-WezQ&s" alt="E-Learing " style="width:100%;border-radius:8px;margin-bottom:8px;">
+      <h4>Portfolio Website</h4>
+      <p class="muted">An interactive e-learning platform offering a wide range of courses for skill development and personal growth. Learn anytime, anywhere with expert-led video lessons and assessments.</p>
+      <div style="display:flex;gap:8px;margin-top:10px;">
+        <a class="btn btn-primary" href="https://e-learn-009.netlify.app/" target="_blank">Live Demo</a>
+        <a class="btn" href="https://github.com/kumaranand3352-lang/E-learn" target="_blank">GitHub</a>
+      </div>
+    </article>
 
-                
-        </section>
+ <!-- Project 3 -->
+    <article class="proj card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtL87UgEsXBDwTrUZsLlgcUwQJBmHxJkDiPg&s" alt="personal-Web" style="width:100%;border-radius:8px;margin-bottom:8px;">
+      <h4>personal-Web for Elitetech</h4>
+      <p class="muted">I’m a passionate B.Sc. Chemistry student 
+This website showcases my projects, skills, and creative journey in tech.
+Currently interning at Elite Tech,
+Dedicated to continuous learning and building </p>
+      <div style="display:flex;gap:8px;margin-top:10px;">
+        <a class="btn btn-primary" href="https://ananz.netlify.app/" target="_blank">Live Demo</a>
+        <a class="btn" href="https://github.com/kumaranand3352-lang/personal-web-page" target="_blank">GitHub</a>
+      </div>
+    </article>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>If you’d like to get in touch, email me at
-     <a href="mailto:kumaranand3352@gmail.com">Email</a>.
-  </p>
-
+  </div>
 </section>
 
+      <section id="resume" class="card">
+        <h3 style="margin-top:0">Resume</h3>
+        <div class="grid-2">
+          <div>
+            <h4>Experience</h4>
+            <div class="timeline">
+              <div class="event">
+                <div class="dot"></div>
+                <strong>Intern —Elite tech</strong>
+                
+                <p class="muted">Built landing pages and small features for an educational startup.</p>
+              </div>
 
+              <div class="event">
+                <div class="dot"></div>
+                <strong>Student Projects</strong>
+                <div class="muted" style="font-size:13px">2025 — Present</div>
+                <p class="muted">Multiple projects in JS, HTML/CSS and small data analysis tasks.</p>
+              </div>
+            </div>
+          </div>
 
+          <div>
+            <h4>Education</h4>
+            <div class="timeline">
+              <div class="event">
+                <div class="dot"></div>
+                <strong>B.Sc. Chemistry — Sourashtra College</strong>
+                <div class="muted" style="font-size:13px">2024 — Present</div>
+                <p class="muted">Second year student balancing studies and software learning.</p>
+              </div>
+            </div>
 
+            <h4 style="margin-top:12px">Tools</h4>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <span class="card" style="padding:6px 10px;border-radius:999px;background:transparent">VS Code</span>
+              <span class="card" style="padding:6px 10px;border-radius:999px;background:transparent">Git</span>
+              <span class="card" style="padding:6px 10px;border-radius:999px;background:transparent">HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h3 style="margin-top:0">Contact</h3>
+        <div class="grid-2">
+          <div>
+            <p class="muted">Interested in collaborating? Send a message and I’ll get back to you.</p>
+            <form onsubmit="event.preventDefault();alert('This is a demo. Replace with your backend or use Formspree/Netlify forms.')">
+              <input placeholder="Your name" required>
+              <input placeholder="Your email" type="email" required>
+              <textarea placeholder="How can I help?" rows="5" required></textarea>
+              <div style="display:flex;gap:10px">
+                <button class="btn btn-primary" type="submit">Send message</button>
+                <a class="btn" href="mailto:kumaranand3352@gmail.com">Email me</a>
+              </div>
+            </form>
+          </div>
+
+          <aside>
+            <div class="card" style="padding:14px">
+              <h4 style="margin:0 0 8px">Get in touch</h4>
+              <div class="muted">kumaranand3352@gmail.com</div>
+              <div class="muted">+91 8189909293</div>
+              <div style="margin-top:12px;display:flex;gap:8px">
+        <a class="btn" href="https://github.com/kumaranand3352-lang" target="_blank">GitHub</a>
+      
+                <a class="btn" href="https://www.linkedin.com/in/anandkumar-m-k-947230371/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="muted">@<span id="year"></span> Elitetech</div>
+      <div class="muted">Built with • HTML & CSS</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Small helper: swap logo initials
+    // Replace or remove script as needed.
+  </script>
+</body>
+</html>
