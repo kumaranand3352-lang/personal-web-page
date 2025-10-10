@@ -182,17 +182,19 @@ Dedicated to continuous learning and building </p>
         <h3 style="margin-top:0">Contact</h3>
         <div class="grid-2">
           <div>
-            <p class="muted">Interested in collaborating? Send a message and I’ll get back to you.</p>
-            <form onsubmit="event.preventDefault();alert('This is a demo. Replace with your backend or use Formspree/Netlify forms.')">
-              <input placeholder="Your name" required>
-              <input placeholder="Your email" type="email" required>
-              <textarea placeholder="How can I help?" rows="5" required></textarea>
+              <p class="muted">Interested in collaborating? Send a message and I’ll get back to you.</p>
+            <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
+              <input name="name" placeholder="Your name" required>
+              <input name="email" type="email" placeholder="Your email" required>
+              <textarea name="message" placeholder="How can I help?" rows="5" required></textarea>
               <div style="display:flex;gap:10px">
                 <button class="btn btn-primary" type="submit">Send message</button>
                 <a class="btn" href="mailto:kumaranand3352@gmail.com">Email me</a>
               </div>
             </form>
           </div>
+
 
           <aside>
             <div class="card" style="padding:14px">
@@ -225,6 +227,7 @@ Dedicated to continuous learning and building </p>
   </script>
 </body>
 </html>
+
 
 
 
